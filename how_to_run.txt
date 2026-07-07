@@ -1,0 +1,71 @@
+Step 1: Open Command Prompt
+
+Press Win + R, type:
+
+cmd
+
+and press Enter.
+
+
+Step 2: Go to Your Project Folder
+
+Type:
+
+cd /d D:\Student_Performance_Prediction
+
+Then press Enter.
+Check the files:
+
+dir
+
+You should see:
+
+app.py
+student_performance_model.pkl
+feature_columns.pkl
+requirements.txt
+
+Step 3: Install Streamlit (One Time Only)
+pip install streamlit
+
+If you already have it installed, it will say:
+
+Requirement already satisfied
+
+Step 4: Run the Application
+streamlit run app.py
+
+After a few seconds, you'll see something like:
+
+Local URL: http://localhost:8501
+
+Network URL: http://192.168.x.x:8501
+
+Your browser should open automatically. If it doesn't, copy and paste the Local URL into your browser.
+
+
+
+Interview Questions You Should Be Ready For
+1. Which algorithm did you use?
+
+Answer: Random Forest Classifier.
+
+2. Why Random Forest?
+
+Answer: It handles multi-class classification well, reduces overfitting through ensemble learning, and provides feature importance.
+
+3. Why was ExamScore removed?
+
+Answer: ExamScore directly influences FinalGrade. Keeping it would cause data leakage, leading to unrealistic 100% accuracy. Removing it made the model more realistic.
+
+4. What was your final accuracy?
+
+Answer: 91.97%
+
+5. How did you evaluate the model?
+
+Answer: Using:
+
+Accuracy
+Confusion Matrix
+Classification Report (Precision, Recall, F1-score)
